@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flashcard Quiz App</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="nav"><div class="brand">Study<span>Cards</span> ✦</div><span class="pill">TASK 01 · FLASHCARDS</span></div></header>
+<main><section class="hero"><div class="eyebrow">Learn one card at a time</div><h1>Make learning <span style="color:var(--primary)">stick.</span></h1><p>Create your own flashcards, reveal answers and move through your study set.</p></section>
+<div class="grid">
+<section class="card span-7"><div class="row between"><h2>Study deck</h2><span id="counter" class="pill">0 / 0</span></div>
+<div id="flashcard" class="flash"><div class="eyebrow" id="sideLabel">QUESTION</div><div class="word" id="question">Add your first flashcard</div><div id="answer" class="answer" hidden></div><p class="small" id="hint">Your cards will appear here.</p></div>
+<div class="row between" style="margin-top:16px"><button class="secondary" id="prevBtn">← Previous</button><button id="showBtn">Show answer</button><button class="secondary" id="nextBtn">Next →</button></div>
+</section>
+<section class="card span-5"><h2 id="formTitle">Create a flashcard</h2><form id="cardForm"><label for="qInput">Question / front</label><textarea id="qInput" rows="3" placeholder="Example: What is HTML?" required></textarea><label for="aInput">Answer / back</label><textarea id="aInput" rows="3" placeholder="Example: HyperText Markup Language" required></textarea><div class="row" style="margin-top:15px"><button type="submit" id="saveBtn">＋ Add card</button><button type="button" class="ghost" id="cancelBtn" hidden>Cancel</button></div></form>
+<p class="small" style="margin-top:15px">Your flashcards are saved in this browser on this device.</p></section>
+<section class="card span-12"><div class="row between"><h2>Your cards</h2><span class="muted small" id="totalLabel">0 cards</span></div><div id="cardList" class="list"></div></section>
+</div></main><footer>StudyCards · Practice a little every day</footer><script src="app.js"></script></body></html>
